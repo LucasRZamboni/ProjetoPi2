@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+ 
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="bootstrap/bootstrap.css" />
+  <link rel="stylesheet" href="bootstrap/bootstrap.min.css" />
+  <link rel="stylesheet" href="bootstrap/_variables.scss" />
+  <link rel="stylesheet" href="bootstrap/_bootswatch.scss" />
+  <link rel="stylesheet" href="style/index.css" />
+  <link rel="stylesheet" href="style/stylesheet.css" />
+  <link rel="stylesheet" href="style/media.css" />
+  <title>Memory Shop</title>
+
+  <!-- LINK DO BOOTSTRAPWATCH DE EXEMPLOS -->
+  <!-- https://bootswatch.com  -->
+  <!-- LINK UTILIZADO DO BOOTSTRAPWATCH -->
+  <!-- https://bootswatch.com/quartz/ -->
+</head>
+
+<body>
+  <div class="container__principal">
+    <header id="Page1">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="images/LOGO.png" alt="logo do site" /></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor03"
+            aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarColor03">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                <a class="nav-link active" href="index.html">Home
+                  <span class="visually-hidden">(current)</span>
+                </a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                  aria-haspopup="true" aria-expanded="false">Planos</a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item text-primary" href="#Page1">Planos Padrões</a>
+                  <a class="dropdown-item" href="#Page2">Preços</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item text-primary" href="#Page3">Planos Personalizáveis</a>
+                  <a class="dropdown-item" href="#Page4">Preços</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="suporte.html">Suporte</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Sobre</a>
+              </li>
+            </ul>
+            <div class="d-flex">
+              <a href="login.html"><button class="btn btn-primary my-2 my-sm-0">
+                  Login
+                </button></a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!-- sessão 1 -->
+
+      <div class="main__container">
+        <div class="card text-white bg-secondary mb-1">
+          <div class="card-header bg-dark">50GB</div>
+          <div class="card-body">
+            <div class="card-image">
+              <img src="images/plano50GB.png" alt="">
+            </div>
+            <div class="card-text">
+              <p>
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="card text-white bg-secondary mb-1">
+          <div class="card-header bg-dark">100GB</div>
+          <div class="card-body">
+            <div class="card-image">
+              <img src="images/plano50GB.png" alt="">
+            </div>
+            <div class="card-text">
+              <p>
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="card text-white bg-secondary mb-1">
+          <div class="card-header bg-dark">150GB</div>
+          <div class="card-body">
+            <div class="card-image">
+              <img src="images/plano50GB.png" alt="">
+            </div>
+            <div class="card-text">
+              <p>
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="card text-white bg-secondary mb-1">
+          <div class="card-header bg-dark">200GB</div>
+          <div class="card-body">
+            <div class="card-image">
+              <img src="images/plano50GB.png" alt="">
+            </div>
+            <div class="card-text">
+              <p>
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- sessão 1 -->
+      <div class="divisor">
+        <a class="nav-link" href="#Page2"><button class="btn btn-primary my-2 my-sm-0">
+            <ion-icon name="chevron-down-outline"></ion-icon></button></a>
+        <div class="div_line"></div>
+        <a class="nav-link" href="#Page1" id="Page2"><button class="btn btn-primary my-2 my-sm-0">
+            <ion-icon name="chevron-up-outline"></ion-icon></button></a>
+      </div>
+      <!-- sessão 2 -->
+
+      <div class="main__container secundario">
+        <table class="table table-hover table-bordered">
+          <thead class="bg-dark">
+            <tr>
+              <th scope="col">Código</th>
+              <th scope="col">Column heading</th>
+              <th scope="col">Column heading</th>
+              <th scope="col">Column heading</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="table-default">
+              <th scope="row">001</th>
+              <td>Column content</td>
+              <td>Column content</td>
+              <td>Column content</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- sessão 2 -->
+      <div class="divisor">
+        <a class="nav-link" href="#Page3"><button class="btn btn-primary my-2 my-sm-0">
+            <ion-icon name="chevron-down-outline"></ion-icon></button></a>
+        <div class="div_line"></div>
+        <a class="nav-link" href="#Page2" id="Page3"><button class="btn btn-primary my-2 my-sm-0">
+            <ion-icon name="chevron-up-outline"></ion-icon></button></a>
+      </div>
+      <!-- sessão 3 -->
+
+      <div class="main__container secundario">
+        <div class="card text-white bg-secondary mb-1">
+          <div class="card-header bg-dark">Plus GB Light</div>
+          <div class="card-body">
+            <div class="card-image">
+              <img src="images/planoPLUS.png" alt="">
+            </div>
+            <div class="card-text">
+              <p>
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="card text-white bg-secondary mb-1">
+          <div class="card-header bg-dark">Plus GB PRO</div>
+          <div class="card-body">
+            <div class="card-image">
+              <img src="images/planoPLUS.png" alt="">
+            </div>
+            <div class="card-text">
+              <p>
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="card text-white bg-secondary mb-1">
+          <div class="card-header bg-dark">Plus GB Master</div>
+          <div class="card-body">
+            <div class="card-image">
+              <img src="images/planoPLUS.png" alt="">
+            </div>
+            <div class="card-text">
+              <p>
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- sessão 3 -->
+      <div class="divisor">
+        <a class="nav-link" href="#Page4"><button class="btn btn-primary my-2 my-sm-0">
+            <ion-icon name="chevron-down-outline"></ion-icon></button></a>
+        <div class="div_line"></div>
+        <a class="nav-link" href="#Page3" id="Page4"><button class="btn btn-primary my-2 my-sm-0">
+            <ion-icon name="chevron-up-outline"></ion-icon></button></a>
+      </div>
+      <!-- sessão 4 -->
+
+      <div class="main__container secundario">
+        <table class="table table-hover table-bordered">
+          <thead class="bg-dark">
+            <tr>
+              <th scope="col">Código</th>
+              <th scope="col">Column heading</th>
+              <th scope="col">Column heading</th>
+              <th scope="col">Column heading</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="table-default">
+              <th scope="row">001</th>
+              <td>Column content</td>
+              <td>Column content</td>
+              <td>Column content</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- sessão 4 -->
+      <footer>
+        <div class="divisor">
+          <div class="block"></div>
+          <p>© COPYRIGHT 2023</p>
+          <a class="nav-link" href="#Page1" id="Page4"><button class="btn btn-outline-light my-2 my-sm-0">
+              Top
+            </button></a>
+        </div>
+      </footer>
+    </main>
+  </div>
+</body>
+
+</html>

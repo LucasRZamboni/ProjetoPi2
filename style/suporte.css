@@ -1,0 +1,33 @@
+.main__container{
+    min-height: calc(100vh - 140px);
+}
+.container__suporte{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: calc(100vh - 140px);
+    
+}
+.container__block__suporte{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(255, 255, 255, 0.396);
+    width: 450px;
+    height: fit-content;
+    padding: 10px;
+    box-shadow: 0 0 10px white;
+    border-radius: 20px;
+}
+.container__block__suporte h2{
+    width: 100%;
+    text-align: center;
+}
+.buttons{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}

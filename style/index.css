@@ -1,0 +1,46 @@
+main .main__container {
+  padding-top: 20px;
+}
+
+main .main__container.secundario {
+  height: calc(100vh - 100px);
+}
+
+main .main__container .card {
+  width: 49%;
+  max-width: 100%;
+}
+.card-body{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  max-height: 90%;
+  border: 2px solid white;
+  padding: 20px;
+  gap: 10px;
+}
+.div_line{
+ width: 100%;
+ height: 5px;
+ background: white;
+ margin: 20px 0 20px 0;
+ border-radius: 50%;
+}
+.card-image{
+  width: calc(50% - 5px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 100%;
+}
+.card-image img{
+  width: 200px;
+  height: 200px;
+}
+.card-text{
+  width: calc(50% - 5px);
+  height: 100%;
+  padding: 20px;
+}
