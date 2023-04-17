@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
- 
+
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -59,7 +59,7 @@
                 <a class="nav-link" href="suporte.html">Suporte</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Sobre</a>
+                <a class="nav-link" href="sobre.html">Sobre</a>
               </li>
             </ul>
             <div class="d-flex">
@@ -74,18 +74,24 @@
     <main>
       <!-- sessão 1 -->
 
-      <div class="main__container">
+      <div class="main__container index">
         <div class="card text-white bg-secondary mb-1">
           <div class="card-header bg-dark">50GB</div>
           <div class="card-body">
             <div class="card-image">
               <img src="images/plano50GB.png" alt="">
             </div>
-            <div class="card-text">
-              <p>
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
+            <div class="card-right">
+              <div class="card-text">
+                <ul class="list-group bg-gradient">
+                  <li class="list-group-item text-dark text-dark">50GB armazenamento</li>
+                  <li class="list-group-item text-dark">2 meses grátis + 10GB bonus</li>
+                </ul>
+              </div>
+              <div class="card-buttons bg-dark border">
+                <a href="login.html"><button type="button" class="btn btn-outline-success">Comprar</button></a>
+                <button type="button" class="btn btn-outline-info">Carrinho</button>
+              </div>
             </div>
           </div>
         </div>
@@ -93,13 +99,20 @@
           <div class="card-header bg-dark">100GB</div>
           <div class="card-body">
             <div class="card-image">
-              <img src="images/plano50GB.png" alt="">
+              <img src="images/plano100GB.png" alt="">
             </div>
-            <div class="card-text">
-              <p>
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
+            <div class="card-right">
+              <div class="card-text">
+                <ul class="list-group list-group bg-gradient">
+                  <li class="list-group-item text-dark">100GB armazenamento</li>
+                  <li class="list-group-item text-dark">1 mês grátis + 20GB bonus</li>
+                  <li class="list-group-item text-dark">3 meses Spotify</li>
+                </ul>
+              </div>
+              <div class="card-buttons bg-dark border">
+                <a href="login.html"><button type="button" class="btn btn-outline-success">Comprar</button></a>
+                <button type="button" class="btn btn-outline-info">Carrinho</button>
+              </div>
             </div>
           </div>
         </div>
@@ -107,13 +120,21 @@
           <div class="card-header bg-dark">150GB</div>
           <div class="card-body">
             <div class="card-image">
-              <img src="images/plano50GB.png" alt="">
+              <img src="images/plano150GB.png" alt="">
             </div>
-            <div class="card-text">
-              <p>
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
+            <div class="card-right">
+              <div class="card-text">
+                <ul class="list-group list-group bg-gradient">
+                  <li class="list-group-item text-dark">150GB armazenamento</li>
+                  <li class="list-group-item text-dark">1 mês grátis + 25GB bonus</li>
+                  <li class="list-group-item text-dark">3 meses Spotify</li>
+                  <li class="list-group-item text-dark">2 meses Netflix</li>
+                </ul>
+              </div>
+              <div class="card-buttons bg-dark border">
+                <a href="login.html"><button type="button" class="btn btn-outline-success">Comprar</button></a>
+                <button type="button" class="btn btn-outline-info">Carrinho</button>
+              </div>
             </div>
           </div>
         </div>
@@ -121,13 +142,21 @@
           <div class="card-header bg-dark">200GB</div>
           <div class="card-body">
             <div class="card-image">
-              <img src="images/plano50GB.png" alt="">
+              <img src="images/plano200GB.png" alt="">
             </div>
-            <div class="card-text">
-              <p>
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
+            <div class="card-right">
+              <div class="card-text">
+                <ul class="list-group list-group bg-gradient">
+                  <li class="list-group-item text-dark">200GB armazenamento</li>
+                  <li class="list-group-item text-dark">40GB bonus</li>
+                  <li class="list-group-item text-dark">6 meses Spotify</li>
+                  <li class="list-group-item text-dark">3 meses Netflix</li>
+                </ul>
+              </div>
+              <div class="card-buttons bg-dark border">
+                <a href="login.html"><button type="button" class="btn btn-outline-success">Comprar</button></a>
+                <button type="button" class="btn btn-outline-info">Carrinho</button>
+              </div>
             </div>
           </div>
         </div>
@@ -144,21 +173,111 @@
       <!-- sessão 2 -->
 
       <div class="main__container secundario">
-        <table class="table table-hover table-bordered">
+        <table class="table table-hover  table-bordered border-dark bg-gradient">
           <thead class="bg-dark">
-            <tr>
+            <tr style="text-align:center">
               <th scope="col">Código</th>
-              <th scope="col">Column heading</th>
-              <th scope="col">Column heading</th>
-              <th scope="col">Column heading</th>
+              <th scope="col">Plano</th>
+              <th scope="col">Preço</th>
+              <th scope="col">Tipo de plano</th>
             </tr>
           </thead>
           <tbody>
             <tr class="table-default">
               <th scope="row">001</th>
-              <td>Column content</td>
-              <td>Column content</td>
-              <td>Column content</td>
+              <td>50GB</td>
+              <td>R$ 30,00</td>
+              <td>Mensal</td>
+            </tr>
+            <tr class="table-default">
+              <th scope="row">002</th>
+              <td>100GB</td>
+              <td>R$ 60,00</td>
+              <td>Mensal</td>
+            </tr>
+            <tr class="table-default">
+              <th scope="row">003</th>
+              <td>150GB</td>
+              <td>R$ 100,00</td>
+              <td>Mensal / Anual</td>
+            </tr>
+            <tr class="table-default text-success">
+              <th scope="row">004</th>
+              <td>200GB</td>
+              <td>R$ 170,00</td>
+              <td>Mensal / Anual</td>
+            </tr>
+            <tr class="table-default">
+              <th scope="row"></th>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr class="table-default">
+              <th scope="row"></th>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr class="table-default">
+              <th scope="row"></th>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr class="table-default">
+              <th scope="row"></th>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr class="table-default">
+              <th scope="row"></th>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr class="table-default">
+              <th scope="row"></th>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr class="table-default">
+              <th scope="row"></th>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr class="table-default">
+              <th scope="row"></th>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr class="table-default">
+              <th scope="row"></th>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr class="table-default">
+              <th scope="row"></th>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr class="table-default">
+              <th scope="row"></th>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr class="table-default">
+              <th scope="row"></th>
+              <td></td>
+              <td></td>
+              <td></td>
             </tr>
           </tbody>
         </table>
@@ -174,32 +293,48 @@
       </div>
       <!-- sessão 3 -->
 
-      <div class="main__container secundario">
+      <div class="main__container secundario2">
         <div class="card text-white bg-secondary mb-1">
           <div class="card-header bg-dark">Plus GB Light</div>
           <div class="card-body">
             <div class="card-image">
               <img src="images/planoPLUS.png" alt="">
             </div>
-            <div class="card-text">
-              <p>
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
+            <div class="card-right">
+              <div class="card-text">
+                <ul class="list-group list-group bg-gradient">
+                  <li class="list-group-item text-dark">Customizável até 500GB</li>
+                  <li class="list-group-item text-dark">50GB bonus</li>
+                  <li class="list-group-item text-dark">8 meses Spotify</li>
+                  <li class="list-group-item text-dark">5 meses Netflix</li>
+                </ul>
+              </div>
+              <div class="card-buttons bg-dark border">
+                <a href="login.html"><button type="button" class="btn btn-outline-success">Comprar</button></a>
+                <button type="button" class="btn btn-outline-info">Carrinho</button>
+              </div>
             </div>
           </div>
         </div>
         <div class="card text-white bg-secondary mb-1">
-          <div class="card-header bg-dark">Plus GB PRO</div>
+          <div class="card-header bg-dark">Plus GB Pro</div>
           <div class="card-body">
             <div class="card-image">
               <img src="images/planoPLUS.png" alt="">
             </div>
-            <div class="card-text">
-              <p>
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
+            <div class="card-right">
+              <div class="card-text">
+                <ul class="list-group list-group bg-gradient">
+                  <li class="list-group-item text-dark">Customizável até 800GB</li>
+                  <li class="list-group-item text-dark">70GB bonus</li>
+                  <li class="list-group-item text-dark">1 Ano Spotify</li>
+                  <li class="list-group-item text-dark">5 meses Netflix</li>
+                </ul>
+              </div>
+              <div class="card-buttons bg-dark border">
+                <a href="login.html"><button type="button" class="btn btn-outline-success">Comprar</button></a>
+                <button type="button" class="btn btn-outline-info">Carrinho</button>
+              </div>
             </div>
           </div>
         </div>
@@ -209,11 +344,19 @@
             <div class="card-image">
               <img src="images/planoPLUS.png" alt="">
             </div>
-            <div class="card-text">
-              <p>
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
+            <div class="card-right">
+              <div class="card-text">
+                <ul class="list-group list-group bg-gradient">
+                  <li class="list-group-item text-dark">Customizável até 1000GB</li>
+                  <li class="list-group-item text-dark">100GB bonus</li>
+                  <li class="list-group-item text-dark">1 Ano Spotify</li>
+                  <li class="list-group-item text-dark">1 Ano Netflix</li>
+                </ul>
+              </div>
+              <div class="card-buttons bg-dark border">
+                <a href="login.html"><button type="button" class="btn btn-outline-success">Comprar</button></a>
+                <button type="button" class="btn btn-outline-info">Carrinho</button>
+              </div>
             </div>
           </div>
         </div>
@@ -230,21 +373,111 @@
       <!-- sessão 4 -->
 
       <div class="main__container secundario">
-        <table class="table table-hover table-bordered">
+        <table class="table table-hover table-bordered border-dark bg-gradient t">
           <thead class="bg-dark">
-            <tr>
+            <tr style="text-align:center">
               <th scope="col">Código</th>
-              <th scope="col">Column heading</th>
-              <th scope="col">Column heading</th>
-              <th scope="col">Column heading</th>
+              <th scope="col">Plano</th>
+              <th scope="col">Preço</th>
+              <th scope="col">Tipo de plano</th>
             </tr>
           </thead>
           <tbody>
             <tr class="table-default">
-              <th scope="row">001</th>
-              <td>Column content</td>
-              <td>Column content</td>
-              <td>Column content</td>
+              <th class="text-warning" scope="row">001-Plus</th>
+              <td class="text-warning">Plus GB Light</td>
+              <td class="text-warning">Contate-nos</td>
+              <td class="text-warning">Anual</td>
+            </tr>
+            <tr class="table-default">
+              <th class="text-danger" scope="row">002-Plus</th>
+              <td class="text-danger">Plus GB Pro</td>
+              <td class="text-danger">Contate-nos</td>
+              <td class="text-danger">Anual</td>
+            </tr>
+            <tr class="table-default">
+              <th class="text-success" scope="row">003-Plus</th>
+              <td class="text-success">Plus GB Master</td>
+              <td class="text-success">Contate-nos</td>
+              <td class="text-success">Anual</td>
+            </tr>
+            <tr class="table-default">
+              <th scope="row"></th>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr class="table-default">
+              <th scope="row"></th>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr class="table-default">
+              <th scope="row"></th>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr class="table-default">
+              <th scope="row"></th>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr class="table-default">
+              <th scope="row"></th>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr class="table-default">
+              <th scope="row"></th>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr class="table-default">
+              <th scope="row"></th>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr class="table-default">
+              <th scope="row"></th>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr class="table-default">
+              <th scope="row"></th>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr class="table-default">
+              <th scope="row"></th>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr class="table-default">
+              <th scope="row"></th>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr class="table-default">
+              <th scope="row"></th>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr class="table-default">
+              <th scope="row"></th>
+              <td></td>
+              <td></td>
+              <td></td>
             </tr>
           </tbody>
         </table>

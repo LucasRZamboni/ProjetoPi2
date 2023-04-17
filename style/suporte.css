@@ -8,7 +8,6 @@
     flex-direction: column;
     width: 100%;
     height: calc(100vh - 140px);
-    
 }
 .container__block__suporte{
     display: flex;
@@ -30,4 +29,8 @@
     align-items: center;
     justify-content: space-evenly;
     margin-top: 20px;
+}
+.block{
+    width: 10px;
+    height: fit-content;
 }

@@ -1,12 +1,13 @@
 @media screen and (min-width: 1340px) {
-  main {
-  }
-  main .main__container {
+  main {}
+
+  main .main__container.index {
     width: 100%;
-    height: calc(100vh - 143px);
-    justify-content: space-around;
+    height: calc(100vh - 131px);
+    justify-content: center;
     padding: 10px 0;
   }
+
   .divisor {
     width: 100%;
     height: fit-content;
@@ -15,24 +16,43 @@
     justify-content: right;
     flex-direction: column;
   }
-  .div_line{
+
+  .div_line {
     display: none;
   }
+
   footer .divisor {
     display: flex;
     align-items: center;
     flex-direction: row;
     justify-content: space-between;
+  }
+
+  .block {
+    width: 100px;
+  }
+
+  main .main__container.sobre {
+    width: 100%;
+  }
+
+  main .main__container.secundario2 .card {
+    height: 400px;
+    width: 40%;
+    gap: 20px;
   }
 }
+
 @media screen and (max-width: 1340px) and (min-width: 680px) {
-  main {
-  }
-  main .main__container {
+  main {}
+
+  main .main__container.index {
     width: 100%;
-    height: calc(100vh - 143px);
+    height: calc(100vh - 140px);
     justify-content: space-around;
   }
+
+
   .divisor {
     width: 100%;
     height: fit-content;
@@ -41,54 +61,308 @@
     justify-content: right;
     flex-direction: column;
   }
-  .div_line{
+
+  .div_line {
     display: none;
   }
+
   footer .divisor {
     display: flex;
     align-items: center;
     flex-direction: row;
     justify-content: space-between;
   }
+
+  .block {
+    width: 100px;
+  }
+
+  .list-group {
+    width: 100%;
+    height: 100%;
+    font-weight: 600;
+  }
+
+  .card-buttons {
+    gap: 0;
+    width: 100%;
+    justify-content: space-between;
+    height: 20%;
+  }
+
+  .card-image img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .index .card-buttons a {
+    width: 49%;
+  }
+
+  .index .card-buttons a button {
+    width: 100%;
+  }
+
+  .index .card-buttons button {
+    width: 49%;
+    font-size: 10px;
+    padding: 10px;
+  }
+
+  main .main__container.sobre {
+    width: 100%;
+
+  }
+
+  main .main__container.sobre .cartao {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    gap: 10px;
+    flex-wrap: nowrap;
+    width: 100%;
+  }
+
+  main .main__container.sobre .cartao .card {
+    height: 350px;
+    width: 60%;
+    padding: 0;
+  }
+
+  main .main__container.sobre .cartao .card .card-body {
+    width: 100%;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  main .main__container.sobre .cartao .card .card-body .text {
+    height: 60%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+
+  main .main__container.sobre .cartao .card .card-body .text ul {
+    width: 90%;
+    padding-left: 5px;
+  }
+
+  main .main__container.sobre .cartao .card .card-body .text ul small {
+    font-weight: 700;
+    font-size: 15px;
+  }
+
+  main .main__container.sobre .cartao .card .card-body .text ul li {
+    width: 100%;
+    padding: 0;
+    font-weight: 300;
+  }
+
+  main .main__container.sobre .cartao .card .card-body .links {
+    width: 90%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 8px;
+  }
+
+  main .main__container.sobre .cartao .card .card-body .links a {
+    width: 100px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  main .main__container.sobre .cartao .card .card-body .links a button {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+  }
+
+  main .main__container.sobre .cartao .card .card-body .links a button ion-icon {
+    font-size: 30px;
+  }
+
 }
 
 @media screen and (max-width: 680px) {
   main {
     width: 100%;
-    min-height: 100vh;
+    min-height: calc(100vh - 140px);
     flex-direction: column;
     flex-wrap: nowrap;
   }
+
   main .main__container {
     width: 100%;
-    height: fit-content;
+    min-height: fit-content;
     align-items: center;
     justify-content: space-around;
   }
+
   main .main__container.secundario {
     width: 100%;
     height: fit-content;
     align-items: center;
     justify-content: space-around;
   }
+
   main .main__container .card {
     width: 100%;
   }
-  .divisor{
+
+  main .divisor {
     margin: 0;
     padding: 0;
   }
-  .divisor a button{
+
+  main .divisor a button {
     display: none;
   }
 
-  .divisor .div_line{
+  main .divisor .div_line {
     display: block;
   }
+
+  main .container__block__suporte {
+    width: 80%;
+
+  }
+
+  main .buttons a {
+    width: 40%;
+    height: 40px;
+    padding: 0;
+    font-size: .8em;
+    font-weight: 600;
+  }
+
+  footer {
+    width: 100%;
+  }
+
   footer .divisor {
     display: flex;
     align-items: center;
     flex-direction: row;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+    width: 100%;
+  }
+
+  footer .block {
+    width: 40px;
+    height: 30px;
+  }
+
+  .list-group {
+    width: 100%;
+    height: 100%;
+    font-weight: 600;
+  }
+
+  .card-buttons {
+    gap: 0;
+    width: 100%;
+    justify-content: space-evenly;
+    padding: 5px;
+  }
+
+  .card-image img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .card-buttons a {
+    width: 40%;
+  }
+
+  .card-buttons a button {
+    width: 100%;
+  }
+
+  .card-buttons button {
+    width: 40%;
+    font-size: 10px;
+  }
+
+  main .main__container .cartao .card {
+    height: 350px;
+    width: 90%;
+    padding: 0;
+  }
+
+  main .main__container .cartao .card .card-body {
+    width: 100%;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  main .main__container .cartao .card .card-body .text {
+    height: 60%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+
+  main .main__container .cartao .card .card-body .text ul {
+    width: 90%;
+    padding-left: 5px;
+  }
+
+  main .main__container .cartao .card .card-body .text ul small {
+    font-weight: 700;
+    font-size: 15px;
+  }
+
+  main .main__container .cartao .card .card-body .text ul li {
+    width: 100%;
+    padding: 0;
+    font-weight: 300;
+  }
+
+  main .main__container .cartao .card .card-body .links {
+    width: 90%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 8px;
+  }
+
+  main .main__container .cartao .card .card-body .links a {
+    width: 100px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  main .main__container .cartao .card .card-body .links a button {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+  }
+
+  main .main__container .cartao .card .card-body .links a button ion-icon {
+    font-size: 30px;
   }
 }

@@ -4,43 +4,98 @@ main .main__container {
 
 main .main__container.secundario {
   height: calc(100vh - 100px);
+  width: 100%;
+}
+
+main .main__container.secundario2 {
+  min-height: fit-content;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
 }
 
 main .main__container .card {
   width: 49%;
   max-width: 100%;
 }
-.card-body{
+
+.card-body {
   display: flex;
   align-items: center;
   justify-content: space-around;
   width: 100%;
   max-height: 90%;
-  border: 2px solid white;
+  /* border: 2px solid white; */
   padding: 20px;
   gap: 10px;
 }
-.div_line{
- width: 100%;
- height: 5px;
- background: white;
- margin: 20px 0 20px 0;
- border-radius: 50%;
+
+.div_line {
+  width: 100%;
+  height: 5px;
+  background: white;
+  margin: 20px 0 20px 0;
+  border-radius: 50%;
 }
-.card-image{
-  width: calc(50% - 5px);
+
+.card-image {
+  width: 45%;
   display: flex;
   align-items: center;
   justify-content: center;
 
   height: 100%;
 }
-.card-image img{
-  width: 200px;
-  height: 200px;
+
+.card-image img {
+  width: 60%;
+  height: 70%;
 }
-.card-text{
-  width: calc(50% - 5px);
+
+.card-text {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.list-group {
+  width: 100%;
   height: 100%;
-  padding: 20px;
+  font-weight: 600;
+  padding: 10px;
+}
+
+.list-group-item {
+  height: fit-content;
+  padding: 5px;
+}
+
+.table td {
+  max-height: 10px;
+}
+
+.card-right {
+  width: 55%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.card-buttons {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 8px;
+  padding: 5px;
+}
+
+.card-buttons a {
+  width: fit-content;
 }
