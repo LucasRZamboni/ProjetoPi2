@@ -1,5 +1,5 @@
 main .sobre {
-    min-height: fit-content;
+    min-height: calc(100vh - 140px);
 }
 
 main .main__container .cartao {
@@ -14,7 +14,7 @@ main .main__container .cartao {
 }
 
 main .main__container .cartao .card {
-    height: 350px;
+    height: 300px;
     width: 40%;
     padding: 0;
 }
