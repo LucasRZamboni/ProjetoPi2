@@ -1,57 +1,99 @@
-@media screen and (min-width: 1340px) {
+@media screen and (min-width: 1360px) {
   main {}
+
+  .main__index {
+    padding: 10px;
+  }
 
   main .main__container.index {
     width: 100%;
-    height: calc(100vh - 131px);
-    justify-content: center;
-    padding: 10px 0;
-  }
-
-  .divisor {
-    width: 100%;
-    height: fit-content;
-    display: flex;
-    align-items: center;
-    justify-content: right;
-    flex-direction: column;
-  }
-
-  .div_line {
-    display: none;
-  }
-
-  footer .divisor {
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
-  .block {
-    width: 100px;
-  }
-
-  main .main__container.sobre {
-    width: 100%;
-  }
-
-  main .main__container.secundario2 .card {
-    height: 400px;
-    width: 40%;
-    gap: 20px;
-  }
-}
-
-@media screen and (max-width: 1340px) and (min-width: 680px) {
-  main {}
-
-  main .main__container.index {
-    width: 100%;
-    height: calc(100vh - 140px);
+    min-height: calc(100vh - 140px);
     justify-content: space-around;
   }
 
+  main .main__container.secundario2 {
+    min-height: calc(100vh - 100px)
+  }
+
+  main .main__container.index .card {
+    height: 390px;
+  }
+
+  main .main__container.secundario2 .card {
+    height: 410px;
+  }
+
+  main .main__container.index .card .card-header,
+  main .main__container.secundario2 .card .card-header {
+    font-size: 20px;
+  }
+
+  main .main__container.index .card .card-body,
+  main .main__container.secundario2 .card .card-body {
+    padding: 10px;
+  }
+
+  main .main__container.index .card .card-body .card-image,
+  main .main__container.secundario2 .card .card-body .card-image {
+    width: 45%;
+  }
+
+  main .main__container.index .card .card-body .card-image img,
+  main .main__container.secundario2 .card .card-body .card-image img {
+    width: 180px;
+    height: 180px;
+  }
+
+  main .main__container.secundario2 .card .card-body .card-right,
+  main .main__container.index .card .card-body .card-right {
+    width: 55%;
+  }
+
+  main .main__container.secundario2 .card .card-body .card-right .card-text .list-group,
+  main .main__container.index .card .card-body .card-right .card-text .list-group {
+    width: 100%;
+    max-height: 100%;
+  }
+
+  main .main__container.secundario2 .card .card-body .card-right .card-text,
+  main .main__container.index .card .card-body .card-right .card-text {
+    width: 100%;
+    font-size: 1.3em;
+  }
+
+  main .main__container.index .card .card-body .card-right .card-buttons,
+  main .main__container.secundario2 .card .card-body .card-right .card-buttons {
+    height: 70px;
+    justify-content: space-around;
+  }
+
+  main .main__container.secundario2 .card .card-body .card-right .card-buttons a,
+  main .main__container.index .card .card-body .card-right .card-buttons a {
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+  }
+
+  main .main__container.secundario2 .card .card-body .card-right .card-buttons a p,
+  main .main__container.index .card .card-body .card-right .card-buttons a p {
+    margin: 0;
+    font-size: 17px;
+  }
+
+  main .main__container.secundario2 .card .card-body .card-right .card-buttons a ion-icon,
+  main .main__container.index .card .card-body .card-right .card-buttons a ion-icon {
+    display: none;
+  }
+
+  thead {
+    font-size: 20px;
+  }
+
+  tbody {
+    font-size: 18px;
+  }
 
   .divisor {
     width: 100%;
@@ -77,36 +119,176 @@
     width: 100px;
   }
 
-  .list-group {
+  main .main__container.sobre,
+  main .main__container.suporte {
     width: 100%;
+    min-height: calc(100vh - 140px);
+  }
+
+  .main__suporte footer .divisor,
+  .main__sobre footer .divisor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .main__suporte footer .divisor .block,
+  .main__suporte footer .divisor a,
+  .main__sobre footer .divisor .block,
+  .main__sobre footer .divisor a {
+    display: none;
+  }
+
+  .main__sobre .main__container.sobre .cartao .card {
+    height: 420px;
+  }
+
+  .main__sobre .main__container.sobre .cartao .card .card-header {
+    font-size: 24px;
+  }
+
+  .main__sobre .main__container.sobre .cartao .card .card-body .text {
+    height: 60%;
+  }
+
+  .main__sobre .main__container.sobre .cartao .card .card-body .text ul {
     height: 100%;
-    font-weight: 600;
   }
 
-  .card-buttons {
-    gap: 0;
+  .main__sobre .main__container.sobre .cartao .card .card-body .text ul small {
+    font-size: 20px;
+  }
+
+  .main__sobre .main__container.sobre .cartao .card .card-body .text ul li {
+    font-size: 20px;
+  }
+
+  .form-group.buttons {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 5px;
+    margin-top: 10px;
+  }
+
+  .form-group.buttons a {
+    width: 100px;
+  }
+
+  .form-group.buttons a button {
     width: 100%;
-    justify-content: space-between;
-    height: 20%;
+    font-size: 20px;
   }
 
-  .card-image img {
-    width: 150px;
-    height: 150px;
+  .form-group.buttons a button,
+  .form-group.buttons button {
+    padding: 10px;
   }
+}
 
-  .index .card-buttons a {
-    width: 49%;
-  }
+@media screen and (max-width: 1359px) and (min-width: 680px) {
+  main {}
 
-  .index .card-buttons a button {
+  main .main__container.index {
     width: 100%;
+    min-height: calc(100vh - 140px);
+    justify-content: space-around;
   }
 
-  .index .card-buttons button {
-    width: 49%;
+  main .main__container.secundario2 {
+    min-height: calc(100vh - 100px)
+  }
+
+  main .main__container.index .card {
+    height: 300px;
+  }
+
+  main .main__container.secundario2 .card {
+    height: 320px;
+  }
+
+  main .main__container.index .card .card-body,
+  main .main__container.secundario2 .card .card-body {
+    padding: 10px;
+  }
+
+  main .main__container.index .card .card-body .card-image,
+  main .main__container.secundario2 .card .card-body .card-image {
+    width: 35%;
+  }
+
+  main .main__container.index .card .card-body .card-image img,
+  main .main__container.secundario2 .card .card-body .card-image img {
+    width: 130px;
+    height: 130px;
+  }
+
+  main .main__container.secundario2 .card .card-body .card-right,
+  main .main__container.index .card .card-body .card-right {
+    width: 65%;
+  }
+
+  main .main__container.secundario2 .card .card-body .card-right .card-text .list-group,
+  main .main__container.index .card .card-body .card-right .card-text .list-group {
+    width: 100%;
+    max-height: 100%;
+  }
+
+  main .main__container.secundario2 .card .card-body .card-right .card-text,
+  main .main__container.index .card .card-body .card-right .card-text {
+    width: 100%;
+    font-size: 0.9em;
+  }
+
+  main .main__container.index .card .card-body .card-right .card-buttons,
+  main .main__container.secundario2 .card .card-body .card-right .card-buttons {
+    height: 70px;
+    justify-content: space-around;
+  }
+
+  main .main__container.secundario2 .card .card-body .card-right .card-buttons a,
+  main .main__container.index .card .card-body .card-right .card-buttons a {
+    width: 45%;
     font-size: 10px;
     padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  main .main__container.secundario2 .card .card-body .card-right .card-buttons a p,
+  main .main__container.index .card .card-body .card-right .card-buttons a p {
+    margin: 0;
+  }
+
+  main .main__container.secundario2 .card .card-body .card-right .card-buttons a ion-icon,
+  main .main__container.index .card .card-body .card-right .card-buttons a ion-icon {
+    display: none;
+  }
+
+  .divisor {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    flex-direction: column;
+  }
+
+  .div_line {
+    display: none;
+  }
+
+  footer .divisor {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .block {
+    width: 100px;
   }
 
   main .main__container.sobre {
@@ -194,6 +376,29 @@
     font-size: 30px;
   }
 
+  .form-group.buttons {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 5px;
+    padding-top: 10px;
+  }
+
+  .form-group.buttons a {
+    width: 60px;
+  }
+
+  .form-group.buttons a button {
+    width: 100%;
+    font-size: 20px;
+  }
+
+  .form-group.buttons a button,
+  .form-group.buttons button {
+    padding: 7px;
+
+  }
 }
 
 @media screen and (max-width: 680px) {
@@ -207,6 +412,13 @@
   main .main__container {
     width: 100%;
     min-height: fit-content;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  main .main__container.suporte {
+    width: 100%;
+    min-height: 100vh;
     align-items: center;
     justify-content: space-around;
   }
@@ -236,7 +448,7 @@
   }
 
   main .container__block__suporte {
-    width: 80%;
+    width: 90%;
 
   }
 
@@ -278,9 +490,29 @@
     padding: 5px;
   }
 
+  .card-body {
+    padding: 10px;
+  }
+
+  .card-right {
+    width: 60%;
+  }
+
+  .card-image {
+    width: 35%;
+  }
+
   .card-image img {
-    width: 150px;
-    height: 150px;
+    width: 125px;
+    height: 125px;
+  }
+
+  thead {
+    font-size: 14px;
+  }
+
+  tbody {
+    font-size: 13px;
   }
 
   .card-buttons a {
@@ -364,5 +596,70 @@
 
   main .main__container .cartao .card .card-body .links a button ion-icon {
     font-size: 30px;
+  }
+
+  .card-buttons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  .card-buttons a .texto-button {
+    display: none;
+
+  }
+
+  /* cadastro */
+  .container__block__cadastro {
+    width: 90%;
+    margin: 50px 0;
+  }
+
+  .container__block__cadastro form {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .container__block__cadastro form .icone {
+    margin-top: 20px;
+  }
+
+  .container__block__cadastro form .form-group {
+    width: 90%;
+  }
+
+  .container__block__cadastro form .form-group .form-floating small {
+    font-size: 10px;
+    padding-left: 5px;
+  }
+
+  .container__block__cadastro form .form-group.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0;
+    margin: 0;
+    height: 70px;
+    width: 100%;
+  }
+
+  .container__block__cadastro form .form-group.buttons a {
+    width: 30%;
+  }
+
+  .container__block__cadastro form .form-group.buttons a button {
+    width: 100%;
+    height: fit-content;
+    font-size: 20px;
+  }
+
+  .container__block__cadastro form .form-group.buttons button {
+    width: 30%;
+  }
+
+  /* login */
+  .container__block__login {
+    width: 90%;
   }
 }

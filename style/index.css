@@ -99,3 +99,7 @@ main .main__container .card {
 .card-buttons a {
   width: fit-content;
 }
+
+.texto-button {
+  font-size: 13px;
+}
